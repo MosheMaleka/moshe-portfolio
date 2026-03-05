@@ -204,21 +204,20 @@ without requiring a local Windows system.
 Cloud Architecture
 </h3>
 
-<pre class="bg-light p-4 rounded">
+<p class="text-muted">
+The analytics solution uses a cloud-based data pipeline that processes raw data,
+transforms it using Python, stores it in PostgreSQL, and visualizes insights
+through Power BI running on an AWS virtual machine.
+</p>
 
-Excel (Raw Data)
-      ↓
-Python ETL (Google Colab)
-      ↓
-Cleaned Dataset (CSV)
-      ↓
-PostgreSQL Database (Supabase)
-      ↓
-AWS EC2 Windows Virtual Machine
-      ↓
-Power BI Dashboard
+<div class="text-center mt-4">
 
-</pre>
+<img src="Data processing pipeline infographic.png"
+class="img-fluid rounded shadow"
+style="max-width:900px;"
+alt="Data Processing Pipeline Architecture">
+
+</div>
 
 </div>
 </section>
