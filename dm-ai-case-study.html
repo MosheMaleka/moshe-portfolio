@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Case Study - DM for Orders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CUSTOM STYLES -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    h3 {
+      margin-top: 40px;
+      font-weight: 600;
+    }
+
+    .section-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    .section-card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .chat-bubble-user {
+      background-color: #dcf8c6;
+      padding: 10px 15px;
+      border-radius: 15px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .chat-bubble-ai {
+      background-color: #ffffff;
+      padding: 10px 15px;
+      border-radius: 15px;
+      display: inline-block;
+      border: 1px solid #ddd;
+      min-height: 40px;
+    }
+
+    .typing {
+      font-style: italic;
+      color: gray;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">AI Case Study</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="bg-dark text-white py-5">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">
+      AI for Everyday Hustle 🇿🇦
+    </h1>
+    <p class="lead">
+      Turning "DM for Orders" into a scalable AI-powered customer experience
+    </p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container py-5">
+
+  <div class="section-card">
+    <h3>🧠 Overview</h3>
+    <p>Small businesses often rely on "DM for orders". As demand grows, managing messages manually becomes inefficient.</p>
+  </div>
+
+  <div class="section-card">
+    <h3>🏪 Real-World Scenario</h3>
+    <ul>
+      <li>"Hi, how much is this?"</li>
+      <li>"Do you have stock?"</li>
+      <li>"Where are you located?"</li>
+    </ul>
+  </div>
+
+  <div class="section-card">
+    <h3>🚨 Problem</h3>
+    <ul>
+      <li>Slow responses</li>
+      <li>Repetitive typing</li>
+      <li>Missed sales</li>
+    </ul>
+  </div>
+
+  <div class="section-card">
+    <h3>⚙️ Solution</h3>
+    <p>AI generates responses → human reviews → faster replies.</p>
+  </div>
+
+  <div class="section-card">
+    <h3>🔄 Workflow</h3>
+    <div class="row text-center">
+      <div class="col-md-3"><div class="p-3 border rounded">📩<br>Message</div></div>
+      <div class="col-md-3"><div class="p-3 border rounded">🤖<br>AI</div></div>
+      <div class="col-md-3"><div class="p-3 border rounded">👀<br>Review</div></div>
+      <div class="col-md-3"><div class="p-3 border rounded">✅<br>Send</div></div>
+    </div>
+  </div>
+
+  <!-- CHAT WITH TYPING -->
+  <div class="section-card">
+    <h3>💬 Live AI Interaction</h3>
+
+    <div class="p-3 bg-light rounded">
+
+      <div class="text-end">
+        <div class="chat-bubble-user">
+          Hi, how much is this?
+        </div>
+      </div>
+
+      <div class="text-start mt-2">
+        <div id="aiReply" class="chat-bubble-ai"></div>
+        <div id="typing" class="typing">AI is typing...</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h3>📊 Impact</h3>
+    <ul>
+      <li>Up to 50% faster responses</li>
+      <li>Better customer experience</li>
+    </ul>
+  </div>
+
+  <div class="section-card">
+    <h3>🙋 My Role</h3>
+    <ul>
+      <li>Designed workflow</li>
+      <li>Applied AI thinking</li>
+    </ul>
+  </div>
+
+  <div class="text-center mt-4">
+    <a href="https://moshemaleka.github.io/moshe-portfolio/" class="btn btn-dark">Back to Portfolio</a>
+  </div>
+
+</div>
+
+<!-- JS -->
+<script>
+  // FADE-IN ON SCROLL
+  const cards = document.querySelectorAll('.section-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  cards.forEach(card => observer.observe(card));
+
+  // TYPING EFFECT
+  const text = "Hi 😊 The price is R250. We have stock available in Johannesburg. Let me know if you'd like to order.";
+  let i = 0;
+
+  function typeEffect() {
+    if (i < text.length) {
+      document.getElementById("aiReply").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeEffect, 30);
+    } else {
+      document.getElementById("typing").style.display = "none";
+    }
+  }
+
+  setTimeout(typeEffect, 1000);
+</script>
+
+</body>
+</html>
