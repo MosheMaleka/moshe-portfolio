@@ -2,20 +2,63 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Moshe Maleka | Data & Business Analyst</title>
+<title>Moshe Maleka | Data & AI Solutions</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-<meta name="description" content="Moshe Maleka - Data & Business Analyst specializing in SQL, Python, ETL, Power BI and cloud analytics solutions.">
-<meta name="keywords" content="Data Analyst, Business Analyst, SQL, Python, ETL, Power BI, AWS, PostgreSQL, Analytics Portfolio">
-<meta name="author" content="Moshe Maleka">
+<meta name="description" content="Moshe Maleka - Data & Business Analyst building AI-powered and data-driven solutions.">
+
+<style>
+
+/* GENERAL */
+body {
+background:#f8f9fa;
+}
+
+/* HERO */
+.hero {
+min-height:90vh;
+display:flex;
+align-items:center;
+background: linear-gradient(135deg,#0d1117,#1f2937);
+}
+
+/* SECTION */
+.section-title {
+font-weight:700;
+margin-bottom:40px;
+}
+
+/* CARDS */
+.case-card {
+border:none;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.case-card:hover {
+transform:translateY(-5px);
+box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+opacity:0;
+transform:translateY(30px);
+transition:all 0.6s ease;
+}
+
+.reveal.active {
+opacity:1;
+transform:translateY(0);
+}
+
+</style>
 
 </head>
 
@@ -48,31 +91,47 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero text-white">
+
 <div class="container">
-<div class="row align-items-center text-center text-md-start">
+<div class="row align-items-center">
 
-<div class="col-md-4 text-center mb-4 mb-md-0">
-<img src="profile.jpg" alt="Moshe Maleka"
-class="img-fluid rounded-circle shadow"
-style="max-width:250px;">
-</div>
+<div class="col-md-6 text-center text-md-start">
 
-<div class="col-md-8 text-white">
-<h1 class="display-4 fw-bold">Moshe Maleka</h1>
-<p class="lead">Data & Business Analyst</p>
-<p>Turning complex data into strategic business decisions.</p>
+<h1 class="display-4 fw-bold mb-3">
+Building Data & AI Solutions That Solve Real Problems
+</h1>
 
-<div class="mt-3">
-<a href="#case-studies" class="btn btn-light me-2">View Case Studies</a>
+<p class="lead mb-4">
+From dashboards to AI-powered workflows — I turn business challenges into scalable systems.
+</p>
+
+<div>
+<a href="#case-studies" class="btn btn-light me-2">
+🚀 View My Work
+</a>
+
 <a href="Moshe_Maleka_CV.pdf" class="btn btn-outline-light" download>
 Download CV
 </a>
 </div>
 
 </div>
+
+<div class="col-md-6 text-center mt-4 mt-md-0">
+
+<div class="p-4 bg-dark rounded shadow">
+<h5 class="fw-bold">AI + Data Thinking</h5>
+<p class="mb-0 text-muted">
+Designing systems, not just reports
+</p>
+</div>
+
+</div>
+
 </div>
 </div>
+
 </section>
 
 <!-- ABOUT -->
@@ -82,9 +141,10 @@ Download CV
 <h2 class="text-center section-title">About Me</h2>
 
 <p class="text-center mx-auto" style="max-width:800px;">
-Data & Business Analyst with experience in enterprise systems, data analytics, and digital transformation initiatives.
-I specialize in translating business challenges into data-driven and AI-enabled solutions through structured requirements analysis, stakeholder engagement, and advanced reporting.
-Skilled in SQL, Python, Power BI, ETL pipelines, and cloud-based analytics architectures.
+I design data and AI-driven solutions that improve business performance.
+My work focuses on transforming manual processes into scalable systems — from analytics dashboards to AI-powered customer workflows.
+
+I combine business analysis, data engineering, and emerging AI capabilities to deliver practical, real-world impact.
 </p>
 
 </div>
@@ -121,14 +181,14 @@ AI-Enabled Analysis
 </div>
 
 <div class="col-md-4 mb-4">
-<h5 class="fw-bold">Data Analytics</h5>
+<h5 class="fw-bold">Data & AI Tools</h5>
 <p>
 <i class="bi bi-database-fill"></i> SQL<br>
 <i class="bi bi-bar-chart-fill"></i> Power BI<br>
-<i class="bi bi-file-earmark-excel-fill"></i> Advanced Excel<br>
-<i class="bi bi-code-slash"></i> Python (Pandas)<br>
-<i class="bi bi-arrow-repeat"></i> ETL Pipelines<br>
-<i class="bi bi-cloud-fill"></i> Cloud Analytics (AWS)
+<i class="bi bi-file-earmark-excel-fill"></i> Excel<br>
+<i class="bi bi-code-slash"></i> Python<br>
+<i class="bi bi-robot"></i> AI Tools<br>
+<i class="bi bi-cloud-fill"></i> Cloud (AWS)
 </p>
 </div>
 
@@ -142,66 +202,48 @@ AI-Enabled Analysis
 
 <h2 class="text-center section-title">Case Studies</h2>
 
-<!-- SALES DASHBOARD -->
-<div class="card case-card p-5">
-<div class="row align-items-center">
+<!-- SALES -->
+<div class="card case-card p-5 mb-4">
 
-<div class="col-md-7">
-<h5 class="fw-bold">Sales Performance Dashboard</h5>
+<h5 class="fw-bold mb-3">📊 Sales Performance Dashboard</h5>
 
 <p>
-Designed and implemented a cloud-based Sales Performance Analytics solution using an end-to-end ETL pipeline.
+End-to-end analytics solution transforming raw data into actionable insights using ETL pipelines and cloud dashboards.
 </p>
 
-<ul>
-<li>Python (Pandas) ETL pipeline</li>
-<li>PostgreSQL (Supabase)</li>
-<li>Power BI dashboards on AWS EC2</li>
-<li>SQL-driven insights</li>
-</ul>
+<div class="row text-center my-4">
+<div class="col-md-3"><strong>Python</strong><br><small>ETL</small></div>
+<div class="col-md-3"><strong>SQL</strong><br><small>Data Layer</small></div>
+<div class="col-md-3"><strong>Power BI</strong><br><small>Visuals</small></div>
+<div class="col-md-3"><strong>AWS</strong><br><small>Cloud</small></div>
+</div>
 
-<div class="mt-4">
-<a href="sales-dashboard.html" class="btn btn-dark me-2">
-<i class="bi bi-bar-chart-fill"></i> View Case Study
-</a>
-
-<a href="https://github.com/moshemaleka/sales-performance-dashboard"
-target="_blank"
-class="btn btn-outline-dark">
+<div>
+<a href="sales-dashboard.html" class="btn btn-dark me-2">View Case Study</a>
+<a href="https://github.com/moshemaleka/sales-performance-dashboard" target="_blank" class="btn btn-outline-dark">
 <i class="bi bi-github"></i> GitHub
 </a>
 </div>
 
 </div>
 
-<div class="col-md-5 text-center">
-<img src="sales-dashboard.png"
-class="img-fluid rounded shadow mb-3"
-alt="Sales Dashboard">
-</div>
+<!-- AI -->
+<div class="card case-card p-5">
 
-</div>
-</div>
-
-<!-- AI CASE STUDY -->
-<div class="card case-card p-5 mt-4">
-<div class="row align-items-center">
-
-<div class="col-md-7">
-<h5 class="fw-bold">AI Customer Service (DM → AI Workflow)</h5>
+<h5 class="fw-bold mb-3">🤖 AI Customer Service Automation</h5>
 
 <p>
-Transforming “DM for Orders” into a scalable AI-powered customer service workflow for small businesses.
+A real-world AI solution transforming WhatsApp “DM for Orders” into a scalable customer service system.
 </p>
 
-<ul>
-<li>AI-generated responses</li>
-<li>Human-in-the-loop workflow</li>
-<li>Faster replies & better consistency</li>
-<li>Real-world SME use case</li>
-</ul>
+<div class="row text-center my-4">
+<div class="col-md-3"><strong>AI</strong><br><small>Responses</small></div>
+<div class="col-md-3"><strong>Automation</strong><br><small>Workflow</small></div>
+<div class="col-md-3"><strong>Process</strong><br><small>Design</small></div>
+<div class="col-md-3"><strong>Impact</strong><br><small>Scaling</small></div>
+</div>
 
-<div class="mt-4">
+<div>
 <a href="dm-ai-case-study.html" class="btn btn-dark me-2">
 🚀 View Case Study
 </a>
@@ -213,16 +255,6 @@ class="btn btn-outline-dark">
 </a>
 </div>
 
-</div>
-
-<div class="col-md-5 text-center">
-<div class="p-4 bg-light rounded shadow-sm">
-<h6 class="fw-bold">AI + Business</h6>
-<p class="mb-0">Turning conversations into conversions</p>
-</div>
-</div>
-
-</div>
 </div>
 
 </div>
@@ -259,7 +291,17 @@ class="btn btn-dark mt-3">
 </div>
 </section>
 
-<!-- SCROLL ANIMATION -->
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+<div class="container">
+<p class="mb-1">© 2026 Moshe Maleka</p>
+<p class="small mb-0">
+Built with Data, AI & Cloud Technologies
+</p>
+</div>
+</footer>
+
+<!-- JS -->
 <script>
 function revealOnScroll(){
 const reveals=document.querySelectorAll(".reveal");
@@ -275,16 +317,6 @@ element.classList.add("active");
 window.addEventListener("scroll",revealOnScroll);
 revealOnScroll();
 </script>
-
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-4 mt-5">
-<div class="container">
-<p class="mb-1">© 2026 Moshe Maleka | Data & Business Analyst</p>
-<p class="small mb-0">
-Built with HTML, Bootstrap, Python & Cloud Data Analytics
-</p>
-</div>
-</footer>
 
 </body>
 </html>
