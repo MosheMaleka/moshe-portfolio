@@ -7,16 +7,16 @@
 
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
 body {
 background-color:#f8f9fa;
-}
-
-h3 {
-margin-top:40px;
-font-weight:600;
 }
 
 .section-card {
@@ -44,7 +44,6 @@ transition:0.3s;
 
 .card:hover {
 transform:translateY(-5px) scale(1.02);
-box-shadow:0 15px 35px rgba(0,0,0,0.12);
 }
 
 .chat-bubble-user {
@@ -52,7 +51,6 @@ background-color:#dcf8c6;
 padding:10px 15px;
 border-radius:15px;
 display:inline-block;
-margin-bottom:10px;
 }
 
 .chat-bubble-ai {
@@ -83,56 +81,47 @@ margin-top:5px;
 </nav>
 
 <!-- HERO -->
-<div class="bg-dark text-white py-5">
-<div class="container text-center">
-<h1 class="display-4 fw-bold">
-AI Customer Service Automation 🤖
-</h1>
-<p class="lead">
-Turning "DM for Orders" into a scalable AI-powered system
-</p>
+<div class="bg-dark text-white py-5 text-center">
+<div class="container">
+<h1 class="display-4 fw-bold">AI Customer Service Automation 🤖</h1>
+<p class="lead">Turning "DM for Orders" into a scalable AI-powered system</p>
 </div>
 </div>
 
 <!-- CONTENT -->
 <div class="container py-5">
 
+<!-- OVERVIEW -->
 <div class="section-card">
-<h3>🧠 Overview</h3>
+<h4>🧠 Overview</h4>
 <p>
-Designed an AI-assisted workflow for a WhatsApp-based hoodie business handling ~300 daily messages. 
-The solution improves response time, consistency, and scalability.
+Designed an AI-assisted workflow for a WhatsApp-based hoodie business handling ~300 daily messages.
+Improves response time, consistency, and scalability.
 </p>
 </div>
 
+<!-- PROBLEM -->
 <div class="section-card">
-<h3>🏪 Real-World Scenario</h3>
+<h4>🚨 Problem</h4>
 <ul>
-<li>"Hi, how much is this?"</li>
-<li>"Do you have stock?"</li>
-<li>"Where are you located?"</li>
-</ul>
-</div>
-
-<div class="section-card">
-<h3>🚨 Problem</h3>
-<ul>
-<li>High message volume (~300/day)</li>
-<li>Slow manual replies</li>
-<li>Repetitive questions</li>
+<li>300+ messages per day</li>
+<li>Repetitive queries (price, location, delivery)</li>
+<li>Slow manual responses</li>
 <li>Missed sales opportunities</li>
 </ul>
 </div>
 
+<!-- SOLUTION -->
 <div class="section-card">
-<h3>⚙️ Solution</h3>
+<h4>⚙️ Solution</h4>
 <p>
 AI generates responses → automation handles simple queries → human reviews complex ones.
 </p>
 </div>
 
+<!-- WORKFLOW -->
 <div class="section-card">
-<h3>🔄 Workflow</h3>
+<h4>🔄 Workflow</h4>
 <div class="row text-center">
 <div class="col-md-3"><div class="p-3 border rounded">📩<br>Message</div></div>
 <div class="col-md-3"><div class="p-3 border rounded">🤖<br>AI</div></div>
@@ -141,18 +130,37 @@ AI generates responses → automation handles simple queries → human reviews c
 </div>
 </div>
 
-<!-- SYSTEM ARCHITECTURE -->
+<!-- ARCHITECTURE -->
 <div class="section-card">
-<h3>🧩 System Architecture</h3>
-
+<h4>🧩 System Architecture</h4>
 <div class="row text-center g-3">
-
 <div class="col-md-2"><div class="card p-3"><i class="bi bi-person fs-3"></i><br>Customer</div></div>
 <div class="col-md-2"><div class="card p-3"><i class="bi bi-whatsapp text-success fs-3"></i><br>WhatsApp</div></div>
 <div class="col-md-2"><div class="card p-3"><i class="bi bi-gear fs-3"></i><br>Automation</div></div>
 <div class="col-md-2"><div class="card p-3"><i class="bi bi-robot fs-3"></i><br>AI Engine</div></div>
 <div class="col-md-2"><div class="card p-3"><i class="bi bi-question-circle fs-3"></i><br>Decision</div></div>
 <div class="col-md-2"><div class="card p-3"><i class="bi bi-database fs-3"></i><br>Storage</div></div>
+</div>
+</div>
+
+<!-- PROMPT -->
+<div class="section-card">
+<h4>🧠 Prompt Engineering</h4>
+
+<div class="bg-light p-3 rounded" style="font-family:monospace; font-size:14px;">
+
+You are a helpful customer service assistant for a hoodie business in Johannesburg.<br><br>
+
+Rules:<br>
+- Be friendly and professional<br>
+- Keep responses short<br>
+- Include price when asked<br>
+- Mention location (Johannesburg)<br>
+- Mention delivery<br>
+- Encourage ordering<br><br>
+
+Example:<br>
+"Hi 😊 The hoodie is R350. We have stock available and we are based in Johannesburg. We also deliver nationwide 🚚."
 
 </div>
 
@@ -160,52 +168,32 @@ AI generates responses → automation handles simple queries → human reviews c
 
 <!-- METRICS -->
 <div class="section-card">
-<h3>📊 Performance Metrics</h3>
-
-<div class="row text-center g-3">
-
-<div class="col-md-3">
-<div class="card p-3">
-<h4>300+</h4>
-<p class="small text-muted">Messages / Day</p>
+<h4>📊 Performance Metrics</h4>
+<div class="row text-center">
+<div class="col-md-3"><h3>300+</h3><p>Messages / Day</p></div>
+<div class="col-md-3"><h3>80%</h3><p>Automated</p></div>
+<div class="col-md-3"><h3>⚡</h3><p>Instant Replies</p></div>
+<div class="col-md-3"><h3>↑</h3><p>Sales Impact</p></div>
 </div>
 </div>
 
-<div class="col-md-3">
-<div class="card p-3">
-<h4>80%</h4>
-<p class="small text-muted">Automated</p>
+<!-- CHARTS -->
+<div class="section-card">
+<h4>📈 Analytics Dashboard</h4>
+<div class="row">
+<div class="col-md-6"><canvas id="responseChart"></canvas></div>
+<div class="col-md-6"><canvas id="volumeChart"></canvas></div>
 </div>
-</div>
-
-<div class="col-md-3">
-<div class="card p-3">
-<h4>⚡ Instant</h4>
-<p class="small text-muted">Response Time</p>
-</div>
-</div>
-
-<div class="col-md-3">
-<div class="card p-3">
-<h4>↑ Sales</h4>
-<p class="small text-muted">Conversion Potential</p>
-</div>
-</div>
-
-</div>
-
 </div>
 
 <!-- CHAT -->
 <div class="section-card">
-<h3>💬 Live AI Interaction</h3>
+<h4>💬 Live AI Interaction</h4>
 
 <div class="p-3 bg-light rounded">
 
 <div class="text-end">
-<div class="chat-bubble-user">
-Hi, how much is this?
-</div>
+<div class="chat-bubble-user">Hi, how much is this?</div>
 </div>
 
 <div class="text-start mt-2">
@@ -216,29 +204,29 @@ Hi, how much is this?
 </div>
 </div>
 
+<!-- IMPACT -->
 <div class="section-card">
-<h3>📈 Impact</h3>
+<h4>📈 Impact</h4>
 <ul>
 <li>Handles 300+ messages daily</li>
-<li>Faster response time</li>
+<li>Faster response times</li>
 <li>Consistent communication</li>
 <li>Reduced manual effort</li>
 </ul>
 </div>
 
+<!-- ROLE -->
 <div class="section-card">
-<h3>🙋 My Role</h3>
+<h4>🙋 My Role</h4>
 <ul>
 <li>Designed AI workflow</li>
-<li>Implemented prompt logic</li>
-<li>Defined automation architecture</li>
+<li>Defined prompt logic</li>
+<li>Structured automation system</li>
 </ul>
 </div>
 
 <div class="text-center mt-4">
-<a href="https://moshemaleka.github.io/moshe-portfolio/" class="btn btn-dark">
-Back to Portfolio
-</a>
+<a href="index.html" class="btn btn-dark">Back to Portfolio</a>
 </div>
 
 </div>
@@ -246,34 +234,48 @@ Back to Portfolio
 <!-- JS -->
 <script>
 
-// SCROLL ANIMATION
+// ANIMATION
 const cards = document.querySelectorAll('.section-card');
-
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if (entry.isIntersecting) {
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
 entry.target.classList.add('show');
 }
 });
 });
+cards.forEach(card=>observer.observe(card));
 
-cards.forEach(card => observer.observe(card));
+// TYPING
+const text="Hi 😊 The hoodie is R350. We have stock available in Johannesburg and deliver nationwide 🚚.";
+let i=0;
 
-// TYPING EFFECT
-const text = "Hi 😊 The price is R350. We have stock available in Johannesburg and deliver nationwide 🚚. Let me know if you'd like to order.";
-let i = 0;
-
-function typeEffect() {
-if (i < text.length) {
-document.getElementById("aiReply").innerHTML += text.charAt(i);
+function typeEffect(){
+if(i<text.length){
+document.getElementById("aiReply").innerHTML+=text.charAt(i);
 i++;
-setTimeout(typeEffect, 25);
-} else {
-document.getElementById("typing").style.display = "none";
+setTimeout(typeEffect,25);
+}else{
+document.getElementById("typing").style.display="none";
 }
 }
+setTimeout(typeEffect,1000);
 
-setTimeout(typeEffect, 1000);
+// CHARTS
+new Chart(document.getElementById('responseChart'),{
+type:'line',
+data:{
+labels:['Before AI','After AI'],
+datasets:[{label:'Response Time (min)',data:[15,5]}]
+}
+});
+
+new Chart(document.getElementById('volumeChart'),{
+type:'bar',
+data:{
+labels:['Manual','AI Assisted'],
+datasets:[{label:'Messages Handled',data:[100,300]}]
+}
+});
 
 </script>
 
