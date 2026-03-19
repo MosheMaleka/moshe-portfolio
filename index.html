@@ -12,9 +12,6 @@
 <!-- Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-<!-- Chart.js -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 <!-- YOUR CSS -->
 <link rel="stylesheet" href="style.css">
 
@@ -23,9 +20,21 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-dark bg-dark fixed-top shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 <div class="container">
 <a class="navbar-brand fw-bold" href="#">Moshe Maleka</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse justify-content-end" id="nav">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="#case-studies">Case Studies</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+
 </div>
 </nav>
 
@@ -34,74 +43,75 @@
 <div class="container">
 <div class="row align-items-center">
 
+<!-- LEFT -->
 <div class="col-md-6 text-center text-md-start">
+
 <h1 class="display-4 fw-bold">
-Building Data & AI Solutions
+Moshe Maleka
 </h1>
 
 <p class="lead">
-From dashboards to AI workflows that scale businesses.
+Data & AI Solutions Specialist
 </p>
 
-<a href="#case-studies" class="btn btn-light me-2">View Work</a>
-<a href="Moshe_Maleka_CV.pdf" class="btn btn-outline-light">Download CV</a>
+<p>
+I build data-driven dashboards and AI-powered workflows that help businesses scale.
+</p>
+
+<a href="#case-studies" class="btn btn-light me-2">
+🚀 View My Work
+</a>
+
+<a href="Moshe_Maleka_CV.pdf" class="btn btn-outline-light">
+Download CV
+</a>
+
 </div>
 
+<!-- RIGHT (PROFILE PIC) -->
 <div class="col-md-6 text-center mt-4 mt-md-0">
-<img src="profile.jpg" class="profile-img" alt="Moshe Maleka">
+<img src="profile.jpg" class="profile-img">
 </div>
 
 </div>
 </div>
 </section>
 
-<!-- METRICS -->
-<section class="py-5 text-center reveal">
-<div class="container">
-<div class="row">
+<!-- ABOUT -->
+<section class="py-5 reveal">
+<div class="container text-center">
 
-<div class="col-md-3 col-6 mb-4">
-<h2 class="counter" data-target="300">0</h2>
-<p>Messages / Day</p>
-</div>
+<h2 class="section-title">About Me</h2>
 
-<div class="col-md-3 col-6 mb-4">
-<h2 class="counter" data-target="50">0</h2>
-<p>% Faster Replies</p>
-</div>
+<p style="max-width:700px; margin:auto;">
+I design data and AI-driven solutions that improve business performance.
+From analytics dashboards to AI-powered customer service workflows, I focus on turning manual processes into scalable systems.
+</p>
 
-<div class="col-md-3 col-6 mb-4">
-<h2 class="counter" data-target="100">0</h2>
-<p>% Consistency</p>
-</div>
-
-<div class="col-md-3 col-6 mb-4">
-<h2 class="counter" data-target="24">0</h2>
-<p>Hours Saved</p>
-</div>
-
-</div>
 </div>
 </section>
 
-<!-- ANALYTICS DASHBOARD -->
+<!-- SKILLS -->
 <section class="py-5 bg-light reveal">
-<div class="container">
+<div class="container text-center">
 
-<h2 class="text-center section-title">Live Analytics View</h2>
+<h2 class="section-title">Core Skills</h2>
 
 <div class="row">
 
-<div class="col-md-6 mb-4">
-<div class="chart-card p-3">
-<canvas id="responseChart"></canvas>
-</div>
+<div class="col-md-4">
+<h5>📊 Data Analytics</h5>
+<p>SQL, Power BI, Excel</p>
 </div>
 
-<div class="col-md-6 mb-4">
-<div class="chart-card p-3">
-<canvas id="volumeChart"></canvas>
+<div class="col-md-4">
+<h5>⚙️ Engineering</h5>
+<p>Python, ETL Pipelines</p>
 </div>
+
+<div class="col-md-4">
+<h5>🤖 AI & Automation</h5>
+<p>AI Workflows, Process Design</p>
 </div>
 
 </div>
@@ -115,96 +125,78 @@ From dashboards to AI workflows that scale businesses.
 
 <h2 class="text-center section-title">Case Studies</h2>
 
+<!-- SALES -->
 <div class="card case-card p-4 mb-4">
 <h5>📊 Sales Dashboard</h5>
-<p>ETL + Power BI + AWS</p>
-<a href="sales-dashboard.html" class="btn btn-dark">View</a>
+<p>ETL + Power BI + AWS analytics solution</p>
+
+<a href="sales-dashboard.html" class="btn btn-dark me-2">View</a>
+
+<a href="https://github.com/moshemaleka/sales-performance-dashboard"
+target="_blank"
+class="btn btn-outline-dark">
+<i class="bi bi-github"></i>
+</a>
 </div>
 
+<!-- AI -->
 <div class="card case-card p-4">
 <h5>🤖 AI Customer Service</h5>
-<p>WhatsApp AI automation workflow</p>
-<a href="dm-ai-case-study.html" class="btn btn-dark">View</a>
+<p>WhatsApp automation using AI-generated responses</p>
+
+<a href="dm-ai-case-study.html" class="btn btn-dark me-2">
+🚀 View Case Study
+</a>
+
+<a href="https://github.com/MosheMaleka/ai-dm-customer-service-case-study"
+target="_blank"
+class="btn btn-outline-dark">
+<i class="bi bi-github"></i>
+</a>
 </div>
 
 </div>
 </section>
 
-<!-- CTA -->
-<section class="cta text-center text-white py-5">
-<div class="container">
-<h2 class="fw-bold mb-3">Let’s Build Something Impactful</h2>
-<p class="mb-4">Data. AI. Business. Let’s make it work.</p>
-<a href="mailto:moshemaleka@yahoo.com" class="btn btn-light">Hire Me</a>
+<!-- CONTACT -->
+<section id="contact" class="py-5 bg-light reveal">
+<div class="container text-center">
+
+<h2 class="section-title">Contact</h2>
+
+<p>Email: <a href="mailto:moshemaleka@yahoo.com">moshemaleka@yahoo.com</a></p>
+
+<p>WhatsApp:
+<a href="https://wa.me/27849169029" target="_blank">
++27 84 916 9029
+</a>
+</p>
+
+<a href="https://linkedin.com/in/moshe-maleka-57638669"
+target="_blank"
+class="btn btn-dark">
+<i class="bi bi-linkedin"></i> LinkedIn
+</a>
+
 </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-3">
-<p class="mb-0">© 2026 Moshe Maleka</p>
+<footer class="bg-dark text-white text-center py-4">
+<p>© 2026 Moshe Maleka</p>
 </footer>
 
-<!-- JS -->
+<!-- SCROLL ANIMATION -->
 <script>
-
-// REVEAL FIX
 function revealOnScroll(){
-const reveals = document.querySelectorAll(".reveal");
-const windowHeight = window.innerHeight;
-
-reveals.forEach(el=>{
-const top = el.getBoundingClientRect().top;
-if(top < windowHeight - 100){
+document.querySelectorAll(".reveal").forEach(el=>{
+if(el.getBoundingClientRect().top < window.innerHeight - 100){
 el.classList.add("active");
 }
 });
 }
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
-
-// COUNTER
-document.querySelectorAll('.counter').forEach(counter=>{
-counter.innerText='0';
-
-const update=()=>{
-const target=+counter.getAttribute('data-target');
-const c=+counter.innerText;
-const inc=target/100;
-
-if(c<target){
-counter.innerText=Math.ceil(c+inc);
-setTimeout(update,20);
-}else{
-counter.innerText=target;
-}
-};
-update();
-});
-
-// CHARTS
-new Chart(document.getElementById('responseChart'), {
-type: 'line',
-data: {
-labels: ['Before AI','After AI'],
-datasets: [{
-label: 'Response Time (min)',
-data: [15, 5],
-tension: 0.4
-}]
-}
-});
-
-new Chart(document.getElementById('volumeChart'), {
-type: 'bar',
-data: {
-labels: ['Manual','AI Assisted'],
-datasets: [{
-label: 'Messages Handled',
-data: [100, 300]
-}]
-}
-});
-
 </script>
 
 </body>
