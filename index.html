@@ -23,7 +23,7 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-dark bg-dark fixed-top shadow-sm">
 <div class="container">
 <a class="navbar-brand fw-bold" href="#">Moshe Maleka</a>
 </div>
@@ -34,10 +34,11 @@
 <div class="container">
 <div class="row align-items-center">
 
-<div class="col-md-6">
+<div class="col-md-6 text-center text-md-start">
 <h1 class="display-4 fw-bold">
 Building Data & AI Solutions
 </h1>
+
 <p class="lead">
 From dashboards to AI workflows that scale businesses.
 </p>
@@ -46,8 +47,8 @@ From dashboards to AI workflows that scale businesses.
 <a href="Moshe_Maleka_CV.pdf" class="btn btn-outline-light">Download CV</a>
 </div>
 
-<div class="col-md-6 text-center">
-<img src="profile.jpg" class="profile-img">
+<div class="col-md-6 text-center mt-4 mt-md-0">
+<img src="profile.jpg" class="profile-img" alt="Moshe Maleka">
 </div>
 
 </div>
@@ -59,22 +60,22 @@ From dashboards to AI workflows that scale businesses.
 <div class="container">
 <div class="row">
 
-<div class="col-md-3">
+<div class="col-md-3 col-6 mb-4">
 <h2 class="counter" data-target="300">0</h2>
 <p>Messages / Day</p>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-6 mb-4">
 <h2 class="counter" data-target="50">0</h2>
 <p>% Faster Replies</p>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-6 mb-4">
 <h2 class="counter" data-target="100">0</h2>
 <p>% Consistency</p>
 </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-6 mb-4">
 <h2 class="counter" data-target="24">0</h2>
 <p>Hours Saved</p>
 </div>
@@ -91,12 +92,16 @@ From dashboards to AI workflows that scale businesses.
 
 <div class="row">
 
-<div class="col-md-6">
+<div class="col-md-6 mb-4">
+<div class="chart-card p-3">
 <canvas id="responseChart"></canvas>
 </div>
+</div>
 
-<div class="col-md-6">
+<div class="col-md-6 mb-4">
+<div class="chart-card p-3">
 <canvas id="volumeChart"></canvas>
+</div>
 </div>
 
 </div>
@@ -128,17 +133,39 @@ From dashboards to AI workflows that scale businesses.
 <!-- CTA -->
 <section class="cta text-center text-white py-5">
 <div class="container">
-<h2>Let’s Build Something Impactful</h2>
+<h2 class="fw-bold mb-3">Let’s Build Something Impactful</h2>
+<p class="mb-4">Data. AI. Business. Let’s make it work.</p>
 <a href="mailto:moshemaleka@yahoo.com" class="btn btn-light">Hire Me</a>
 </div>
 </section>
 
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+<p class="mb-0">© 2026 Moshe Maleka</p>
+</footer>
+
 <!-- JS -->
 <script>
+
+// REVEAL FIX
+function revealOnScroll(){
+const reveals = document.querySelectorAll(".reveal");
+const windowHeight = window.innerHeight;
+
+reveals.forEach(el=>{
+const top = el.getBoundingClientRect().top;
+if(top < windowHeight - 100){
+el.classList.add("active");
+}
+});
+}
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
 
 // COUNTER
 document.querySelectorAll('.counter').forEach(counter=>{
 counter.innerText='0';
+
 const update=()=>{
 const target=+counter.getAttribute('data-target');
 const c=+counter.innerText;
@@ -161,7 +188,8 @@ data: {
 labels: ['Before AI','After AI'],
 datasets: [{
 label: 'Response Time (min)',
-data: [15, 5]
+data: [15, 5],
+tension: 0.4
 }]
 }
 });
