@@ -1,43 +1,37 @@
-/* Global */
+/* GLOBAL */
 body {
     font-family: Arial, sans-serif;
+    background:#f8f9fa;
+    padding-top: 70px;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-/* Hero Section */
+/* HERO */
 .hero {
-    background: linear-gradient(135deg, #0d3b66, #1d6fa5);
-    color: white;
-    padding: 120px 0;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg,#0d1117,#1f2937);
 }
 
-/* Section Titles */
+/* PROFILE IMAGE */
+.profile-img {
+    max-width: 220px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+/* SECTION TITLES */
 .section-title {
-    color: #0d3b66;
     font-weight: 700;
-    margin-bottom: 50px;
-    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+    color: #0d3b66;
 }
 
-/* Custom Button */
-.btn-custom {
-    background-color: #0d3b66;
-    color: white;
-    border-radius: 50px;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
-
-.btn-custom:hover {
-    background-color: #092c4c;
-    color: white;
-    transform: translateY(-2px);
-}
-
-/* General Buttons */
+/* BUTTONS */
 .btn {
     border-radius: 50px;
     padding: 10px 20px;
@@ -48,10 +42,10 @@ html {
     transform: translateY(-2px);
 }
 
-/* Case Study Card */
+/* CASE CARDS */
 .case-card {
-    border-radius: 20px;
     border: none;
+    border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
@@ -61,13 +55,14 @@ html {
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
 }
 
-/* Badges */
+/* BADGES */
 .badge {
     font-size: 0.8rem;
     padding: 8px 14px;
     border-radius: 50px;
 }
-/* Reveal Animation */
+
+/* REVEAL ANIMATION */
 .reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -78,10 +73,8 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
-body {
-    padding-top: 70px;
-}
-/* Project Images */
+
+/* PROJECT IMAGES */
 .project-img {
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
