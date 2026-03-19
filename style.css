@@ -1,82 +1,61 @@
-/* GLOBAL */
 body {
-    font-family: Arial, sans-serif;
-    background:#f8f9fa;
-    padding-top: 70px;
-}
-
-html {
-    scroll-behavior: smooth;
+font-family: Arial;
+padding-top:70px;
+background:#f8f9fa;
 }
 
 /* HERO */
 .hero {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(135deg,#0d1117,#1f2937);
+min-height:90vh;
+display:flex;
+align-items:center;
+background: linear-gradient(135deg,#0d1117,#1f2937);
 }
 
-/* PROFILE IMAGE */
+/* PROFILE */
 .profile-img {
-    max-width: 220px;
-    border-radius: 50%;
-    border: 4px solid white;
+width:220px;
+border-radius:50%;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
 
-/* SECTION TITLES */
+/* TITLES */
 .section-title {
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #0d3b66;
+font-weight:700;
+margin-bottom:40px;
 }
 
-/* BUTTONS */
-.btn {
-    border-radius: 50px;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-}
-
-/* CASE CARDS */
+/* CARDS */
 .case-card {
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
+border-radius:15px;
+box-shadow:0 15px 30px rgba(0,0,0,0.08);
+transition:0.3s;
 }
 
 .case-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+transform:translateY(-5px);
 }
 
-/* BADGES */
-.badge {
-    font-size: 0.8rem;
-    padding: 8px 14px;
-    border-radius: 50px;
+/* CTA */
+.cta {
+background: linear-gradient(135deg,#0d1117,#1f2937);
 }
 
-/* REVEAL ANIMATION */
+/* METRICS */
+.counter {
+font-size:2.5rem;
+font-weight:bold;
+color:#0d3b66;
+}
+
+/* SCROLL */
 .reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
+opacity:0;
+transform:translateY(40px);
+transition:0.8s;
 }
 
 .reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* PROJECT IMAGES */
-.project-img {
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    margin-bottom: 15px;
+opacity:1;
+transform:translateY(0);
 }
