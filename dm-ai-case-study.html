@@ -117,6 +117,8 @@ Improves response time, consistency, and scalability.
 <p>
 AI generates responses → automation handles simple queries → human reviews complex ones.
 </p>
+
+<p><strong>Automation Logic:</strong> Simple queries are auto-answered, complex queries are escalated to a human.</p>
 </div>
 
 <!-- WORKFLOW -->
@@ -169,21 +171,30 @@ Example:<br>
 <!-- METRICS -->
 <div class="section-card">
 <h4>📊 Performance Metrics</h4>
+
 <div class="row text-center">
 <div class="col-md-3"><h3>300+</h3><p>Messages / Day</p></div>
 <div class="col-md-3"><h3>80%</h3><p>Automated</p></div>
 <div class="col-md-3"><h3>⚡</h3><p>Instant Replies</p></div>
 <div class="col-md-3"><h3>↑</h3><p>Sales Impact</p></div>
 </div>
+
+<p class="text-muted small mt-3">
+These metrics are illustrative and based on a typical small business scenario handling high-volume WhatsApp enquiries. 
+They demonstrate the potential impact of AI-assisted responses on response time and message handling capacity.
+</p>
+
 </div>
 
 <!-- CHARTS -->
 <div class="section-card">
-<h4>📈 Analytics Dashboard</h4>
+<h4>📈 Impact Simulation (Before vs After AI)</h4>
+
 <div class="row">
 <div class="col-md-6"><canvas id="responseChart"></canvas></div>
 <div class="col-md-6"><canvas id="volumeChart"></canvas></div>
 </div>
+
 </div>
 
 <!-- CHAT -->
@@ -245,7 +256,7 @@ entry.target.classList.add('show');
 });
 cards.forEach(card=>observer.observe(card));
 
-// TYPING
+// TYPING EFFECT
 const text="Hi 😊 The hoodie is R350. We have stock available in Johannesburg and deliver nationwide 🚚.";
 let i=0;
 
